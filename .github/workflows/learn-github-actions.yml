@@ -10,7 +10,7 @@ jobs:                               # Groups together all jobs that run in the l
     runs-on: ubuntu-latest          # Configures job to run on Ubuntu Linux runner (means job will execute on a fresh VM 
                                     #   hosted by GH)
                                     
-    step:                           # Groups together all steps that run in the check-bats-version job; each job nested under 
+    steps:                           # Groups together all steps that run in the check-bats-version job; each job nested under 
                                     #   this section is a separate action or shell command
                                     
       - uses: actions/checkout@v2   # The "uses" keyword tells the job to retrieve v2 of the community action "actions/checkout@v2" 
